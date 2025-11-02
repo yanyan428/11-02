@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td> Radius:</td>
+            <td> <input type="number" id="r" onkeyup="calr()"> </td>
+        </tr>
+        <tr>
+            <td> Diameters:</td>
+            <td> <input type="number" id="d" onkeyup="cald()"> </td>
+        </tr>
+        <tr>
+            <td> Circmference:</td>
+            <td> <input type="number" id="c" onkeyup="calc()" > </td>
+        </tr>
+        <tr>
+            <td> Area:</td>
+            <td> <input type="number" id="a" onkeyup="cala()"> </td>
+        </tr>
+
+        
+    </table>
+
+
+    <script>
+
+        
+        function calr() {
+            let r = Number(document.getElementById("r").value);
+            
+
+            
+            let d = r + r;
+            let c = 2 * Math.PI * r;
+            let a = Math.PI * r * r;
+
+
+
+            document.getElementById("d").value = d;
+
+            document.getElementById("c").value = c;
+            document.getElementById("a").value = a;
+        }
+        function cald() {
+            let d = Number(document.getElementById("d").value);
+            
+
+            
+            let r = d/2;
+            let c = 2 * Math.PI * r;
+            let a = Math.PI * r * r;
+
+
+
+            document.getElementById("r").value = r;
+
+            document.getElementById("c").value = c;
+            document.getElementById("a").value = a;
+        }
+
+        // function calc() {
+        //     let c = Number(document.getElementById("c").value);
+            
+
+            
+        //     let d = r + r;
+        //     let r =d/2;
+        //     let a = Math.PI * r * r;
+
+
+
+        //     document.getElementById("d").value = d;
+
+        //     document.getElementById("r").value = r;
+        //     document.getElementById("a").value = a;
+        // }
+
+        // function cala() {
+        //     let a = Number(document.getElementById("a").value);
+            
+
+            
+        //     let d = r + r;
+        //     let r =d/2;
+        //     let c = 2 * Math.PI * r;
+
+
+
+        //     document.getElementById("d").value = d;
+
+        //     document.getElementById("r").value = r;
+        //     document.getElementById("c").value = c;
+        // }
+
+    </script>
+</body>
+
+</html>
