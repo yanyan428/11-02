@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="container">
+        <button id="creatButton" onclick="">Create New Paragraph</button>
+    </div>
+
+
+
+
+
+</body>
+
+
+
+<script>
+    // document.getElementById('creatButton').addEventListener('click', function () {
+
+    //     //    1. create the element
+    //     var newParagraph = document.createElement('p');
+    //     // 2. set content
+    //     newParagraph.textContent = 'This paragraph was added dynamically!';
+    //     // 3.append to the dom
+    //     var container = document.getElementById('container');
+    //     container.appendChild(newParagraph);
+
+
+
+
+    // });
+
+
+
+    const mytable = document.createElement("table");
+
+    //creat a table with 3 colums and 23 rows
+    for (var i = 1; i < 11; i++) {
+        //rows
+        var tr = document.createElement("tr");
+
+        for (var j = 1; j < 11; j++){
+            //colums
+            var td = document.createElement("td"); 
+
+        td.textContent = i * j;
+        tr.appendChild(td);
+        }
+        mytable.appendChild(tr);
+    }
+    document.body.appendChild(mytable);
+
+
+</script>
+
+</html>
